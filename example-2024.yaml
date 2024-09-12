@@ -1,0 +1,44 @@
+templates:
+  direct: "Karakter {index} wordt verschoven met {shift} plekken. Het gecodeerde karakter is {encrypted_char}."
+  relative_more: "Karakter {index} is verschoven met {extra_shift} plekken meer ten opzichte van {reference_person} zijn / haar hint."
+  relative_less: "Karakter {index} is verschoven met {extra_shift} plekken minder ten opzichte van {reference_person} zijn / haar hint."
+hints:
+  - character: 1
+    type: "direct"
+    shift: 1
+    person: "Alice"
+    requirement: "Beantwoord een raadsel."
+  - character: 2
+    type: "relative"
+    reference_hint: 1
+    extra_shift: 2
+    person: "Bob"
+    requirement: "Los een puzzel op."
+  - character: 3
+    type: "direct"
+    shift: 3
+    person: "Charlie"
+    requirement: "Zing een lied."
+  - character: 4
+    type: "relative"
+    reference_hint: 2
+    extra_shift: -1
+    person: "David"
+    requirement: "Doe 10 push-ups."
+  - character: 5
+    type: "direct"
+    shift: 5
+    person: "Eve"
+    requirement: "Vertel een grap."
+  - character: 6
+    type: "relative"
+    reference_hint: 4
+    extra_shift: 2
+    person: "Frank"
+    requirement: "Los een wiskundig probleem op."
+  - character: 9
+    type: "relative"
+    reference_hint: 2
+    extra_shift: 2
+    person: "Piet"
+    requirement: "Los een wiskundig probleem op."
