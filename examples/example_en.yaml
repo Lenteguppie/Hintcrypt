@@ -1,0 +1,44 @@
+templates:
+  direct: "Encoded character {index} has shifted with {shift} spots. The encoded character is: {encrypted_char}."
+  relative_more: "Encoded character {index} has shifted with {extra_shift} more spots than {reference_person}'s hint."
+  relative_less: "Encoded character {index} has shifted with {extra_shift} less spots than {reference_person}'s hint."
+hints:
+  - character: 1
+    type: "direct"
+    shift: 1
+    person: "Alice"
+    requirement: "Solve a riddle."
+  - character: 2
+    type: "relative"
+    reference_hint: 1
+    extra_shift: 2
+    person: "Bob"
+    requirement: "Solve a riddle."
+  - character: 3
+    type: "direct"
+    shift: 3
+    person: "Charlie"
+    requirement: "Sing a song."
+  - character: 4
+    type: "relative"
+    reference_hint: 2
+    extra_shift: -1
+    person: "David"
+    requirement: "Do 10 push-ups."
+  - character: 5
+    type: "direct"
+    shift: 5
+    person: "Eve"
+    requirement: "Tell a joke."
+  - character: 6
+    type: "relative"
+    reference_hint: 4
+    extra_shift: 2
+    person: "Frank"
+    requirement: "Solve a mathematical problem."
+  - character: 9
+    type: "relative"
+    reference_hint: 2
+    extra_shift: 2
+    person: "Piet"
+    requirement: "Solve a mathematical problem."
